@@ -14,19 +14,27 @@ a:hover {
 button {
   transition: all 0.2s ease-in-out;
   background-color: transparent;
-  border: 1px solid var(--color-primary);
+  border: 0;
   border-radius: 12px;
   padding: 8px 12px 8px 12px;
   cursor: pointer;
+  color: var(--color-primary);
 }
 
 button:hover {
-  background-color: var(--color-primary);
-  color: #fff;
   box-shadow: 0px 0px 0px 2px var(--color-primary-transparent);
 }
 
 button:focus {
   outline: 0;
   box-shadow: 0px 0px 0px 4px var(--color-primary-transparent);
+}
+
+.surface {
+  transition: box-shadow 0.15s ease-in-out;
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.01);
+}
+
+.surface:hover {
+  box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.05);
 }

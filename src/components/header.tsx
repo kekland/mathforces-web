@@ -6,7 +6,9 @@ export const Header: React.FC = () => {
   return (
     <div style={{ height: 64, paddingLeft: 24, paddingRight: 24, position: 'sticky', top: 0, backgroundColor: 'var(--color-background)' }}>
       <Row style={{ alignItems: 'center' }}>
-        <Title>
+        <div style={{ width: 36, height: 36, backgroundColor: 'var(--color-primary)', borderRadius: 12 }} />
+        <Spacer size={12} />
+        <Title primary>
           MathForces
         </Title>
         <Spacer />

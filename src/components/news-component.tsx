@@ -6,7 +6,7 @@ import { Button } from './button'
 
 export const NewsComponent: React.FC = () => {
   return (
-    <Surface rounded style={{padding: 16}}>
+    <Surface rounded style={{padding: 24}}>
       <Column>
         <Title>Результаты первой олимпиады</Title>
         <Subtitle><a href='/'>Mathforces</a> 3 мая 2020 17:05</Subtitle>

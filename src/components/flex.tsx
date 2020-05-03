@@ -24,8 +24,16 @@ export const Row: React.FC<{ style?: React.CSSProperties }> = ({ style, children
   )
 }
 
-export const Spacer: React.FC<{size?: number}> = ({size}) => {
+export const Spacer: React.FC<{ size?: number }> = ({ size }) => {
   return (
-    <div style={{flex: size? `0 0 ${size}px` : '1'}} />
+    <div style={{ flex: size ? `0 0 ${size}px` : '1' }} />
+  )
+}
+
+export const Flexible: React.FC<{ flex?: number }> = ({ flex, children }) => {
+  return (
+    <div style={{ flex: flex ?? 1 }}>
+      {children}
+    </div>
   )
 }

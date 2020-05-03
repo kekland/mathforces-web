@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { CSSProperties } from 'react'
 
-export const Title: React.FC = ({ children }) => {
+export const Title: React.FC<{primary?: boolean, style?: CSSProperties}> = ({ children, primary, style }) => {
   return (
-    <span style={{ fontSize: 20, fontWeight: 600 }}>
+    <span style={{ fontSize: 20, fontWeight: 600, color: primary? 'var(--color-primary)' : 'var(--color-text)', ...style }}>
       {children}
     </span>
   )
