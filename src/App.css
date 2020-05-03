@@ -13,7 +13,8 @@
 
   width: 100%;
   height: 100%;
-  --color-primary: #247fd3;
+  --color-primary: rgba(36, 127, 211, 1);
+  --color-primary-transparent: rgba(36, 127, 211, 0.25);
   background-color: var(--color-background);
 }
 
@@ -21,10 +22,12 @@
   --color-surface: #ffffff;
   --color-background: #eeeeee;
   --color-text: #111111;
+  --color-text-muted: #666666;
 }
 
 .app-dark {
   --color-surface: #121212;
   --color-background: #000000;
   --color-text: #eeeeee;
+  --color-text-muted: #aaaaaa;
 }
